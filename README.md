@@ -7,11 +7,11 @@ Berikut langkah-langkahnya:
 
 ![image](https://github.com/user-attachments/assets/dcb3f9aa-3b44-48e7-9fe9-e2fb55b01cbd)
 
-2. **Kloning Repositori**: Ketik perintah berikut untuk mengkloning repositori ke laptopmu. Ganti <repository-url> dengan URL yang telah kamu salin.
+2. **Kloning Repositori**:klik pada bagian code dan salin url dari repo ini
 
-3. **Buka Terminal**: Buka terminal atau command prompt di laptopmu.
+3. **Buka Terminal**: Buka terminal atau command prompt di folder yang kamu inginkan.
 
-4. **Kloning Repositori**: Ketik perintah berikut untuk mengkloning repositori ke laptopmu. Ganti `<repository-url>` dengan URL yang telah kamu salin.
+4. **Kloning Repositori**: Ganti `<repository-url>` dengan URL yang telah kamu salin.
 
 ```bash
   git clone <url-repositori-hasil-fork>
