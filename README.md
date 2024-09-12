@@ -60,7 +60,7 @@ git push -u origin H071231nnn # Sesuaikan dengan NIM masing-masing
 - Pesan Commit sebaiknya yang bisa dipahami kedepannya
 - Jika ada yang ingin ditanyakan silahkan bertanya di GB Asistensi / Private Chat
 
-**"*Ya,yang dibutuhukan oleh manusia,adalah jangan berhenti. Jangan berhenti mengusahakan yang diinginkan.*" - 3726mdpl**
+**"*Ya,yang dibutuhkan oleh manusia,adalah jangan berhenti. Jangan berhenti mengusahakan yang diinginkan.*" - 3726mdpl**
 
 
 ### -- LAB-WEB-12-2024 --
