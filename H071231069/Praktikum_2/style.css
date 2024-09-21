@@ -1,0 +1,435 @@
+/* General */
+* {
+  /* Mengatur margin dan padding untuk seluruh elemen menjadi nol, serta mengaktifkan perhitungan padding dan border dalam ukuran elemen */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Agar padding dan border termasuk dalam ukuran elemen */
+  scroll-behavior: smooth; /* Scroll dengan transisi yang halus */
+}
+
+*::selection {
+  /* Menghilangkan warna latar belakang ketika teks diseleksi */
+  background: none;
+}
+
+body {
+  /* Menggunakan font Helvetica dengan jarak antar baris (line-height) sebesar 1.5 untuk tampilan yang rapi */
+  font-family: Helvetica;
+  line-height: 1.5;
+}
+
+/* Navbar */
+.navbar {
+  /* Mengatur warna, bayangan, dan posisi navbar */
+  background-color: rgb(103, 0, 0);
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  position: sticky; /* Navbar tetap di atas saat di-scroll */
+  top: 0;
+  z-index: 1; /* Agar navbar berada di atas elemen lainnya */
+  padding: 5px;
+  text-align: center;
+}
+
+.navbar ul {
+  /* Menghilangkan tanda list dan membuat item navbar rata tengah */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Membuat item navbar dalam satu baris */
+  justify-content: center; /* Rata tengah */
+}
+
+.navbar ul li a {
+  /* Mengatur tampilan link dalam navbar */
+  text-decoration: none; /* Menghilangkan garis bawah */
+  padding: 10px 20px; /* Jarak dalam elemen */
+  display: block; /* Membuat area klik penuh */
+  color: rgb(255, 255, 255); /* Warna teks putih */
+  transition: color 0.5s ease; /* Transisi warna saat di-hover */
+}
+
+.navbar ul li a:hover {
+  /* Perubahan warna saat link di-hover */
+  color: rgb(249, 8, 8);
+  transition: color 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+  /* Mengatur tampilan section hero */
+  display: flex; /* Layout dengan flexbox */
+  align-items: center; /* Rata tengah secara vertikal */
+  padding: 80px;
+  background-image: url(image/kis.png); /* Menambahkan gambar latar belakang */
+}
+
+.hero-text {
+  /* Mengatur tampilan teks pada section hero */
+  width: 70%; /* Lebar elemen teks 70% */
+  padding-left: 80px;
+}
+
+.hero-text h1 {
+  /* Mengatur ukuran dan margin heading 1 */
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero-text h2 {
+  /* Mengatur margin untuk heading 2 */
+  margin-bottom: 20px;
+}
+
+.hero-image img {
+  /* Mengatur tampilan gambar hero */
+  width: 100%; /* Lebar gambar sesuai dengan elemen kontainernya */
+}
+
+/* About Section */
+.about {
+  /* Mengatur tampilan section about */
+  display: flex; /* Layout dengan flexbox */
+  background-color: rgb(240, 139, 139); /* Warna latar belakang */
+  padding: 80px 20px;
+  color: white; /* Warna teks putih */
+}
+
+.about ul {
+  /* Menghilangkan bullet point dari list dalam about section */
+  list-style: none;
+}
+
+.about h2 {
+  /* Mengatur ukuran heading 2 dalam about section */
+  font-size: 2em;
+  padding: 0px 140px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  /* Mengatur tampilan paragraf dalam about section */
+  width: 100%; /* Lebar penuh */
+  font-size: 1.1em; /* Ukuran font lebih besar */
+  text-align: justify; /* Teks rata kiri-kanan */
+}
+
+.about-p {
+  /* Mengatur tata letak paragraf dengan flexbox */
+  display: flex;
+  padding: 0px 139px;
+  flex-direction: row; /* Susunan elemen secara horizontal */
+  gap: 20px; /* Jarak antar elemen */
+}
+
+/* Gallery Section */
+.gallery {
+  /* Mengatur tampilan section gallery */
+  display: flex; /* Layout dengan flexbox */
+  background-image: url(image/kis.png); /* Gambar latar belakang */
+  padding: 80px 160px;
+}
+
+.gallery ul {
+  /* Menghilangkan bullet point dari list dalam gallery */
+  list-style: none;
+}
+
+.gallery h2 {
+  /* Mengatur ukuran heading 2 dalam gallery section */
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  /* Menyusun elemen gallery dalam bentuk grid */
+  display: grid;
+  gap: 10px; /* Jarak antar elemen grid */
+  grid-template-columns: 1fr 1fr 1fr; /* Tiga kolom dalam grid */
+  justify-items: center; /* Elemen grid rata tengah */
+}
+
+.gallery-grid img {
+  /* Mengatur tampilan gambar dalam gallery */
+  width: 60%; /* Gambar menggunakan 60% dari lebar kontainer */
+  height: auto; /* Tinggi gambar otomatis sesuai proporsi */
+  transition: transform 0.3s ease; /* Transisi animasi saat gambar di-hover */
+}
+
+.gallery-grid img:hover {
+  /* Efek saat gambar di-hover */
+  transform: scale(1.1) rotate(7deg); /* Membesar dan berputar */
+}
+
+/* Footer */
+footer {
+  /* Mengatur tampilan footer */
+  background-color: rgb(74, 4, 4); /* Warna latar belakang */
+  color: white; /* Warna teks putih */
+  padding: 10px;
+  display: flex; /* Layout dengan flexbox */
+  justify-content: space-between; /* Elemen footer disusun berjauhan */
+  align-items: center; /* Elemen rata tengah secara vertikal */
+  flex-wrap: wrap; /* Membuat konten responsif */
+}
+
+.footer-logo {
+  /* Mengatur tata letak logo dan teks dalam footer */
+  display: flex; /* Layout horizontal */
+  align-items: center; /* Elemen rata tengah secara vertikal */
+  gap: 10px; /* Jarak antara logo dan teks */
+}
+
+.footer-logo img {
+  /* Mengatur tampilan logo gambar dalam footer */
+  width: 40px;
+  border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+}
+
+.footer-logo h4 {
+  /* Mengatur ukuran font teks dalam logo */
+  font-size: 16px;
+}
+
+.footer-kontak {
+  /* Mengatur tampilan kontak dalam footer */
+  font-size: 14px;
+  display: grid; /* Layout dengan grid */
+  grid-template-columns: repeat(2, 1fr); /* Dua kolom dalam grid */
+  grid-template-rows: repeat(2, auto); /* Dua baris dalam grid */
+  gap: 5px; /* Jarak antar elemen grid */
+}
+
+.footer-kontak p {
+  /* Mengatur margin kecil pada paragraf kontak */
+  margin: 2px 0;
+}
+
+.footer-kontak a {
+  /* Mengatur tampilan link dalam kontak */
+  color: white; /* Warna teks putih */
+  text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.footer-kontak a:hover {
+  /* Efek hover pada link kontak */
+  color: rgb(253, 4, 4); /* Warna merah saat di-hover */
+  text-decoration: underline; /* Garis bawah muncul saat di-hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  /* Styling untuk layar di bawah 1024px */
+  .hero-text {
+    /* Mengatur ukuran teks hero */
+    width: 100%;
+    padding-left: 80px;
+  }
+
+  .hero-image {
+    /* Mengatur posisi gambar pada hero */
+    padding-left: 150px;
+  }
+
+  .hero-image img {
+    /* Gambar hero menggunakan lebar penuh */
+    width: 100%;
+  }
+
+  .about {
+    /* Padding section about untuk layar kecil */
+    padding: 80px 50px;
+  }
+
+  .about h2 {
+    /* Padding heading 2 dalam about untuk layar kecil */
+    padding-left: 92px;
+  }
+
+  .about-p {
+    /* Padding dan tata letak paragraf dalam about untuk layar kecil */
+    padding: 0px 92px;
+  }
+
+  .gallery {
+    /* Padding untuk gallery section */
+    padding: 80px 160px;
+  }
+
+  .gallery h2 {
+    /* Ukuran heading 2 dalam gallery untuk layar kecil */
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .gallery-grid {
+    /* Grid gallery untuk layar kecil dengan 2 kolom */
+    grid-template-columns: auto auto;
+    gap: 15px;
+  }
+
+  .gallery-grid img {
+    /* Ukuran gambar gallery untuk layar kecil */
+    width: 60%;
+    flex-direction: column-reverse;
+  }
+
+  .footer-left img {
+    /* Ukuran gambar footer untuk layar kecil */
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Styling untuk layar di bawah 768px */
+  * {
+    /* Margin seluruh elemen menjadi nol */
+    margin: 0px;
+  }
+
+  .hero-image {
+    /* Padding untuk gambar dalam hero section */
+    padding-left: 20px;
+  }
+
+  .hero-image,
+  .hero-text h1 h2 {
+    /* Padding bawah untuk elemen hero */
+    padding-bottom: 20px;
+  }
+
+  .about p {
+    /* Padding untuk paragraf dalam about section */
+    padding: 1rem;
+    text-align: justify;
+    flex-direction: column;
+  }
+
+  .gallery {
+    /* Padding gallery untuk layar sedang */
+    padding-left: 138px;
+  }
+
+  .gallery-grid img {
+    /* Ukuran gambar gallery untuk layar sedang */
+    width: 80%;
+  }
+
+  .footer-left {
+    /* Padding untuk elemen footer kiri */
+    padding-left: 113px;
+  }
+
+  .footer-left img {
+    /* Ukuran gambar footer untuk layar sedang */
+    width: 50%;
+  }
+
+  .footer-right {
+    /* Padding untuk elemen footer kanan */
+    padding-left: 10%;
+  }
+}
+
+@media (max-width: 430px) {
+  /* Styling untuk layar di bawah 430px */
+  body {
+    /* Mengatur padding dan margin body */
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero {
+    /* Hero section diatur menjadi kolom saat layar kecil */
+    flex-direction: column-reverse;
+    padding: 40px;
+  }
+
+  .hero-text h1 {
+    /* Ukuran heading 1 dalam hero di layar kecil */
+    font-size: 2em;
+  }
+
+  .hero-text {
+    /* Padding teks dalam hero section */
+    width: 100%;
+    padding: 20px 0;
+    text-align: start; /* Teks rata kiri */
+  }
+
+  .hero-image img {
+    /* Ukuran gambar hero untuk layar kecil */
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .about {
+    /* Padding section about untuk layar kecil */
+    padding: 40px 0px;
+  }
+
+  .about h2 {
+    /* Padding heading 2 dalam about untuk layar kecil */
+    padding-left: 37.5px;
+  }
+
+  .about-p {
+    /* Tata letak paragraf dalam about menjadi kolom pada layar kecil */
+    flex-direction: column;
+    padding: 0 27px;
+    gap: 20px;
+  }
+
+  .about p {
+    /* Padding dan text-align justify untuk paragraf */
+    padding: 1rem;
+    text-align: justify;
+    flex-direction: column;
+  }
+
+  .gallery {
+    /* Padding untuk gallery section di layar kecil */
+    padding: 40px 5px;
+  }
+
+  .gallery h2 {
+    /* Padding heading 2 gallery untuk layar kecil */
+    padding-left: 32px;
+  }
+
+  .gallery-grid {
+    /* Mengatur grid gallery untuk layar kecil */
+    text-align: center;
+    grid-template-columns: 1fr; /* Satu kolom pada layar kecil */
+    gap: 0px;
+  }
+
+  .gallery-grid img {
+    /* Gambar gallery menggunakan lebar penuh */
+    width: 100%;
+  }
+
+  .footer {
+    /* Tata letak footer menjadi kolom pada layar kecil */
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    /* Elemen footer menempati lebar penuh pada layar kecil */
+    padding: 0px;
+    width: 100%;
+  }
+
+  .footer-left img {
+    /* Ukuran gambar dalam footer untuk layar kecil */
+    width: 30%;
+  }
+
+  .contact-text {
+    /* Teks kontak dalam footer rata kiri */
+    text-align: start;
+    justify-content: center;
+  }
+}
