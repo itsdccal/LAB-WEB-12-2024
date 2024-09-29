@@ -1,0 +1,41 @@
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    border-radius: 10px;
+    gap: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 2px;
+    transition: transform 1000ms;   
+}
+
+.image-wrap {
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    gap: 5px;
+}
+
+.image-wrap img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.image-wrap:hover img {
+    transform: scale(1.05);
+}
