@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drink Your Coffe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="Images/Logo.png" alt="Logo" style="height: 50px" /> noffe
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="#order"
+                class="btn signup-btn"
+                style="
+                  background-color: #5c4033;
+                  color: white;
+                  border-radius: 20px;
+                  padding: 5px;
+                "
+                >Signup</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+    id="hero-section"
+      class="hero-section"
+      style="background-color: #fff7f1; padding: 60px"
+    >
+      <div class="container hero-section">
+        <div class="row align-items-center">
+          <!-- Text Section -->
+          <div class="col-md-6 hero-text mt-5" style="color: #5c4033">
+            <h1 style="font-size: 3rem; font-weight: bold">
+              Drink Your Coffee
+            </h1>
+            <p style="font-size: 1.7rem; margin: 30px">
+              Experience the difference as we meticulously select and roast the
+              finest beans to create a truly unforgettable cup of coffee. Join
+              us on a journey of taste and awaken your senses, one sip at a
+              time.
+            </p>
+            <a
+              href="#menu"
+              class="btn order-btn"
+              style="background-color: #5c4033; color: white"
+              >Order Now</a
+            >
+          </div>
+
+          <!-- Image Section -->
+          <div class="col-md-6 hero-image text-center">
+            <img
+              src="Images/Cangkir coffe.png"
+              alt="Coffee Cup Image"
+              width="100%"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- //buatkan section about kasih ID -->
+    <!-- container cukup 1 -->
+    <section class="about" style="padding: 5px">
+      <div class="container my-5" id="about">
+        <h1 class="text-center mb-5" style="color: #5c4033">
+          Start Your Day the Right Way!
+        </h1>
+        <div class="row justify-content-center">
+          <div class="col-md-4 d-flex align-items-stretch mb-4">
+            <div class="card text-center" style="width: 100%">
+              <img
+                src="Images/Hot Coffe.png"
+                class="card-img-top mx-auto"
+                alt="Hot Coffee"
+                style="height: auto; width: 100px"
+              />
+
+              <div class="card-body">
+                <p class="card-text">
+                  Indulge in the rich aroma and warmth of our premium hot
+                  coffee, made from hand-selected beans that are carefully
+                  roasted to perfection. Whether you're starting your day or
+                  need a comforting afternoon pick-me-up, our hot coffee
+                  delivers a full-bodied flavor experience in every sip.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex align-items-stretch mb-4">
+            <div class="card text-center" style="width: 100%">
+              <img
+                src="Images/Cold Coffe.png"
+                class="card-img-top mx-auto"
+                alt="Cold Coffee"
+                style="height: auto; width: 100px"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Beat the heat and stay refreshed with our signature cold
+                  coffee, brewed to bring out smooth and vibrant flavors. Each
+                  glass is a cool escape, whether you prefer it sweetened or
+                  bold, offering the perfect balance of refreshment and energy
+                  for any time of the day.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="coffee-banner" id="menu" style="background-color: #fff7f1; color: #5c4033; text-align: center; padding: 80-x 0; background-size: cover;">
+      <div class="container-fluid"></div>
+      <h1 class="display-4">Experience the Fusion of Taste and Aroma</h1>
+      <p class="lead">
+        Discover the perfect harmony of rich aromas and bold flavors in every
+        cup. Whether you're savoring your first sip or exploring new brews,
+        there's always a unique taste to experience. Join us for a delightful
+        coffee journey, crafted for coffee lovers like you.
+      </p>
+
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="https://i.pinimg.com/736x/97/81/e2/9781e2038f2891b8e03ed0d8a9535101.jpg"
+                class="card-img-top"
+                alt="Cappuccino"
+              />
+              <div class="card-body text-center">
+                <h5 class="coffee-title">Coffe Latte</h5>
+                <p class="text-muted">Rp.15.000</p>
+                <a href="#" class="btn" style="background-color: #5c4033; color: white;">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="https://i.pinimg.com/564x/5a/21/84/5a2184cf3268f5321481f506ffaceaf7.jpg"
+                class="card-img-top"
+                alt="Chai Latte"
+              />
+              <div class="card-body text-center">
+                <h5 class="coffee-title">Cappuccino</h5>
+                <p class="text-muted">Rp.15.000</p>
+                <a href="#" class="btn" style="background-color: #5c4033; color: white;">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="https://i.pinimg.com/564x/4d/c0/6a/4dc06a369874323cd7b26288d8108a52.jpg"
+                class="card-img-top"
+                alt="Macchiato"
+              />
+              <div class="card-body text-center">
+                <h5 class="coffee-title">Macchiato</h5>
+                <p class="text-muted">Rp.10.000</p>
+                <a href="#" class="btn" style="background-color: #5c4033; color: white;">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="justify-content: center;">
+        <div class="card" style="width: 419px;">
+          <h5 style="margin-top: 30px;">List Your Order</h5>
+          <div class="col-md-5 d-flex mb-4 card-body width:500px">
+          
+            <form style="text-align: left;">
+              <div class="mb-3">
+                <label for="exampleInputNama" class="form-label" style="width: 350px;" >Nama</label>
+                <input type="text" class="form-control" id="exampleInputNama" aria-describedby="namaHelp" placeholder="Masukkan Nama">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputNomeja" class="form-label">No Meja</label>
+                <input type="text" class="form-control" id="exampleInputNomeja" placeholder="Masukkan No Meja">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn" style="background-color: #5c4033; color: white;">Order</button>
+            </form>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mt-5" id="reviews">
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-center">
+            <div>
+              <h3 class="fw-bold">FROM OUR CUSTOMERS</h3>
+              <blockquote class="blockquote">
+                <p>
+                  I've tried coffee from various places, but Coffee Cup stands
+                  out from the rest. The quality and consistency of their blends
+                  are unmatched. Each cup is a flavor journey that takes my
+                  taste buds to new heights. Their commitment to sourcing the
+                  finest beans and their meticulous roasting process truly
+                  shines through in every sip.
+                </p>
+              </blockquote>
+              <footer class="blockquote-footer">
+                Novi Rezkiyah Azzahrah Ramadhani
+              </footer>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-end">
+            <img
+              src="Images/1.jpg"
+              alt="Customer"
+              class="img-fluid rounded-circle"
+              style="width: 300px; margin-left: 10px;" 
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="color: #5c4033; background-color:#fff7f1; justify-content: center;">
+    <footer class="mt-5 p-4 text-center">
+        <p>&copy; 2024 Drink Your Coffe. All rights reserved.</p>
+        <p>Follow us: 
+            <a href="https://www.instagram.com/novi.reazra_/">Instagram</a> | 
+            <a href="https://www.facebook.com">Facebook</a> | 
+            <a href="https://www.Twitter.com">Twitter</a>
+        </p>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
