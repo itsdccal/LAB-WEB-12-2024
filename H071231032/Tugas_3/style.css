@@ -1,0 +1,13 @@
+*::selection {
+    background-color: black;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+}
+
+.contact-section textarea {
+    resize: none;
+}
