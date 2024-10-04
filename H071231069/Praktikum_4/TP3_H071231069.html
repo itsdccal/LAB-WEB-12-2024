@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dunia Imajiner</title>
+  </head>
+  <body>
+    <script>
+      let hariAwal = prompt("Masukkan Hari: ").toLowerCase();
+      let jumlahHari = parseInt(prompt("Masukkan Jumlah Hari: "));
+      let hari = [
+        "minggu",
+        "senin",
+        "selasa",
+        "rabu",
+        "kamis",
+        "jumat",
+        "sabtu",
+      ];
+
+      function HitungHari(hariAwal, jumlahHari) {
+        let indexHA = hari.indexOf(hariAwal);
+        if (indexHA === -1) {
+          return "Hari tidak Valid";
+        }
+
+        let masadepan = (indexHA + jumlahHari) % 7;
+        let hariAkhir = hari[masadepan];
+        return hariAkhir;
+      }
+      let hasil = HitungHari(hariAwal, jumlahHari);
+      alert(jumlahHari + " setelah hari " + hariAwal + " adalah " + hasil);
+    </script>
+  </body>
+</html>

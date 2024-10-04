@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>barang</title>
+
+</head>
+<body>
+    <script>
+        while(true) {
+            let hargaBarang = parseInt(prompt("Masukkan Harga Barang : "))
+    
+            if (isNaN(hargaBarang) || hargaBarang < 0) {
+                alert("inputan tidak valid")
+                continue
+            }
+            else {
+                let jenisBarang = prompt ("Masukkan Jenis Barang (Elektronik, Pakaian, Makanan, Lainnya) : ").toLowerCase();
+                let HargaSetelahDiskon = 0 ;
+                let diskon = '';
+                if (jenisBarang === "elektronik") {
+                    diskon = '10%'
+                    HargaSetelahDiskon = hargaBarang * 0.9; 
+                } else if (jenisBarang === "pakaian") {
+                    diskon = '20%'
+                    HargaSetelahDiskon = hargaBarang * 0.8;
+                
+                } else if (jenisBarang === "makanan") {
+                    diskon = '5%'
+                    HargaSetelahDiskon = hargaBarang * 0.95;
+                } else {
+                    diskon = '0'
+                    HargaSetelahDiskon = hargaBarang;
+                }
+            alert (
+            "Harga awal : " + hargaBarang + 
+            "\nDiskon :" + diskon + 
+            "\nHarga Setelah Diskon :" + HargaSetelahDiskon
+            )
+            
+            break;
+            }
+        }
+    </script>
+</body>
+</html>
