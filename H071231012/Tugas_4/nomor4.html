@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP4 NO4</title>
+</head>
+<body>
+    <h1>Praktikum 04: Menghubungkan JavaScript</h1>
+    <script>
+let angkaRandom = 1 + Math.floor(Math.random() * 100); 
+let percobaan = 0;
+
+function temukan(tebakan, angka) {
+    percobaan++; 
+    if (tebakan < angka) {
+        console.log("Terlalu rendah! Coba Lagi");
+        return false; 
+    } else if (tebakan > angka) {
+        console.log("Terlalu tinggi! Coba Lagi");
+        return false; 
+    } else {
+        console.log(`Tebakan Anda benar! Anda telah mencoba ${percobaan} kali.`);
+        return true;
+    }
+}
+
+let angkaTebakan = parseInt(prompt("Masukkan salah satu angka dari 1 sampai 100: "));
+while (!temukan(angkaTebakan, angkaRandom)) {
+    angkaTebakan = parseInt(prompt("Masukkan salah satu angka dari 1 sampai100:"));
+}
+    </script>
+</body>

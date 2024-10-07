@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tp4 No 2</title>
+</head>
+<body>
+    <script>
+        let harga = prompt ("Masukan harga barang: ");
+        let jenis = prompt ("masukan jenis barang (Elektronik, Pakaian, Makanan)");
+        let diskon = 0;
+        let jdiskon = "";
+        if (jenis === "Elektronik") {
+            jdiskon = "Diskon: 10%";
+            diskon = harga * 0.90;
+        }  else if (jenis === "Pakaian") {
+            jdiskon = "Diskon: 20%";
+            diskon = harga * 0.80;
+        }else if (jenis === "Makanan"){
+            jdiskon = "Diskon: 5%";
+            diskon = harga * 0.95;
+        } else {
+            console.log("Tidak ada diskon");
+        }
+
+        console.log("Harga awal : ", + harga);
+        console.log(jdiskon);
+        console.log("Harga setelah diskon : ", + (diskon));
+    </script>
+</body>
+</html>
