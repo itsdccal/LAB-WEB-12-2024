@@ -1,0 +1,120 @@
+.enemy-sidebar {
+    width: 15vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.player-sidebar {
+    width: 15vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@keyframes swipeDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.swipe-down {
+    animation: swipeDown 0.5s ease-out;
+}
+
+body {
+    background-image: url('/cards/bgblackjack.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+#buttonStart {
+    background-color: #21daff !important; 
+    color: white !important;
+    border-radius: 15px;
+    padding: 10px 30px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
+    transition: all 0.1s ease-in-out; 
+}
+
+#buttonStart:hover {
+    background-color: #21daff !important; 
+}
+
+#buttonHit {
+    background-color: #fd7e14 !important; 
+    color: white !important;
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.1s ease-in-out;
+}
+
+#buttonHit:hover {
+    background-color: #ff0000 !important; 
+}
+
+#buttonHold {
+    background-color: #becc00 !important; 
+    color: white !important;
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.1s ease-in-out;
+}
+
+#buttonHold:hover {
+    background-color: #c82333 !important; 
+}
+
+/* Efek saat tombol ditekan */
+#buttonStart:active, #buttonHit:active, #buttonHold:active {
+    transform: translateY(2px); 
+}
+
+/* Gaya untuk tombol All In */
+.btn-all-in {
+    background-color: #590095; /* Warna merah untuk all-in */
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-all-in:hover {
+    background-color: #000000;
+}
+
+h4 {
+    color: white;
+}
+
+.bg-player {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    outline: white;
+
+}
+
+.bg-bot {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    outline: white; 
+}
