@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run JavaScript</title>
+</head>
+<body>
+    <h1>IsRunning >:3</h1>
+    <script>
+//no.1
+
+// function countEvenNumbers(start, end) {
+//     let count = [];
+//     for (let i = start; i <= end; i++) {
+//         if (i % 2 === 0) {
+//             count.push(i);
+//         }
+//     }
+//     return count;
+// }
+
+// console.log(countEvenNumbers(1, 10)); 
+
+// no.2
+
+// function calculateFinalPrice() {
+//     let price = parseFloat(prompt("Masukkan harga barang:"));
+//     let itemType = prompt("Masukkan jenis barang (Elektronik, Pakaian, Makanan, Lainnya):").toLowerCase();
+
+//     let discount = 0;
+
+//     switch (itemType) {
+//         case 'elektronik':
+//             discount = 10;
+//             break;
+//         case 'pakaian':
+//             discount = 20;
+//             break;
+//         case 'makanan':
+//             discount = 5;
+//             break;
+//         default:
+//             discount = 0;
+//     }
+//     let finalPrice = price - (price * (discount / 100));
+
+    
+//     console.log(`Harga awal: Rp${price}`);
+//     console.log(`Diskon: ${discount}%`);
+//     console.log(`Harga setelah diskon: Rp${finalPrice}`);
+// }
+// calculateFinalPrice();
+
+// no.3
+
+// function dayAfterNDays(startDay, daysLater) {
+//     const daysOfWeek = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'];
+    
+//     let startIndex = daysOfWeek.indexOf(startDay);
+//     let newDayIndex = (startIndex + daysLater) % 7;
+
+    
+//     console.log(`${daysLater} hari setelah ${startDay} adalah ${daysOfWeek[newDayIndex]}`);
+// 
+// // kasi inputan!
+// dayAfterNDays('Jumat', 1000);
+
+// no.4
+function guessTheNumber() {
+    let randomNumber = Math.floor(Math.random() * 100) + 1;
+    let guess = 0;
+    let attempts = 0;
+
+    while (guess !== randomNumber) {
+        guess = parseInt(prompt("Masukkan salah satu dari angka 1 sampai 100:"));
+        attempts++;
+
+        if (guess > randomNumber) {
+            console.log("Terlalu tinggi! Coba lagi.");
+
+        } else if (guess < randomNumber) {
+            console.log("Terlalu rendah! Coba lagi.");
+        }
+    }
+
+    console.log(`Selamat! kamu berhasil menebak angka ${randomNumber} dengan benar.`);
+    console.log(`Sebanyak ${attempts}x percobaan.`);
+}
+guessTheNumber();
+
+
+
+    </script>
+</body>
+</html>
