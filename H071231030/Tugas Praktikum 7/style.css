@@ -1,0 +1,9 @@
+body {
+    background-image: linear-gradient(to top, #ff00008c, #ff000000 75%), url(assets/img/Background-UI.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
