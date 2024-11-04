@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Styling untuk latar belakang */
+/* Styling untuk latar belakang */
+.background {
+    background-image: url('images/background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    color: white;
+    text-align: center; 
+    overflow: hidden;
+}
+
+/* Styling untuk gambar agar lebih ideal */
+#unhas, #imab {
+    position: absolute;
+    width: 45vw; /* Membuat gambar memenuhi setengah lebar layar */
+    height: 100vh; /* Membuat gambar setinggi layar */
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+    object-fit: cover; /* Memastikan gambar tetap terisi dengan proporsi yang benar */
+    z-index: 1;
+}
+
+#unhas {
+    z-index: 2; /* Memberi lapisan lebih tinggi jika diperlukan */
+}
+
+#imab {
+    position: relative;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Gelap transparan untuk kontras */
+}
+
+/* Styling untuk teks */
+.content {
+    position: relative; /* Agar teks tetap di atas overlay */
+    z-index: 1; /* Membuat teks lebih tinggi dari overlay */
+    font-size: 2rem; /* Ukuran teks */
+}
+
+#h1home {
+    font-family: 'Poppins'; /* Menggunakan font Poppins untuk h1 */
+    color: rgba(0, 0, 0, 0.5); /* Warna untuk h1 */
+    margin-top: 20px; /* Margin atas untuk h1 */
+    text-align: left;
+    position: absolute;
+    right: 150px;
+    bottom: 100px;
+    font-size: 80px;
+}
+
+#phome {
+    font-family: 'Roboto'; /* Menggunakan font Roboto untuk paragraf */
+    font-size: 30px; /* Ukuran font untuk paragraf */
+    text-align: left;
+    position: absolute;
+    white-space: nowrap;
+    right: 0px;
+    bottom: -20px;
+}
+
+#conab {
+    background-color: #123a236d;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 1300px;
+    text-align: center;
+    position: relative;
+}
+
+#abh1 {
+    font-family: 'annapurna SIL';
+    font-size: 50px;
+    margin: 0;
+}
+
+#abh2 {
+    font-size: 1em;
+    font-family: 'Poppins'; /* Menggunakan font Poppins untuk h1 */
+    color: #ffffff; /* Warna untuk h1 */
+    margin-top: 0;
+    font-size: 50px;
+}
+
+#abp {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #f9f9f9;
+    text-align: justify;
+}
+
+#conab::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('circuit-pattern.png');
+    opacity: 0.1;
+    border-radius: 15px;
+}
+
+#h1con {
+    font-family: 'Poppins'; /* Menggunakan font Poppins untuk h1 */
+    color: #ffffff; /* Warna untuk h1 */
+    margin-top: 20px; /* Margin atas untuk h1 */
+    text-align: center;
+    position: center;
+    right: 90px;
+    bottom: 120px;
+    font-size: 110px;
+    text-wrap: nowrap;
+}
+
+#pcon {
+    font-family: 'Roboto'; /* Menggunakan font Roboto untuk paragraf */
+    font-size: 40px; /* Ukuran font untuk paragraf */
+    text-align: center;
+    position: center;
+    white-space: nowrap;
+    right: 0px;
+    bottom: 0px;
+}
+
+#btncon1 {
+    border-radius: 20px;
+    width: 300px;
+    height: 40px;
+    color: #ffffff;
+    background-color: #123a23;
+    font-size: 15px;
+    position: center;
+    left: -565px;
+    bottom: -75px;
+    border-color: transparent;
+}
+#btnconform {
+    border-radius: 10px; /* Radius border lebih kecil */
+    width: 40px; /* Lebar tombol yang lebih ringkas */
+    height: 35px; /* Tinggi tombol yang lebih ringkas */
+    font-size: 14px; /* Ukuran font lebih kecil */
+    color: #ffffff;
+    background-color: #123a23;
+    border: none;
+    margin: 5px; /* Jarak antar tombol lebih kecil */
+    padding: 5px 10px; /* Padding dalam tombol yang lebih kecil */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btnconform:hover {
+    background-color: #0f2d1c; /* Warna saat hover */
+}
+
+/* Jika ada beberapa tombol yang ingin dirapatkan */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Jarak antar tombol */
+}
+
+.btnform2 {
+    translate: -115px;
+}
+
+.btnform3 {
+    translate: 115px;
+}
+
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}
+
+#contactContent {
+    position: relative; /* Agar teks tetap di atas overlay */
+    z-index: 1; /* Membuat teks lebih tinggi dari overlay */
+    font-size: 2rem; /* Ukuran teks */
+}
+#h1conform {
+    font-family: 'Montserrat';
+    color: #ffffff; /* Warna untuk h1 */
+    margin-top: 20px; /* Margin atas untuk h1 */
+    text-align: center;
+    position: relative;
+    font-size: 60px;
+    text-wrap: nowrap;
+}
+#contactForm {
+    margin-top: 60px; /* Memberi jarak dari navbar */
+    padding: 20px; /* Padding dalam form untuk kenyamanan */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 80%;
+    max-width: 500px; /* Lebar maksimum yang lebih kecil */
+    height: 35px; /* Tinggi input yang lebih kecil */
+    font-size: 16px; /* Ukuran font lebih kecil */
+    border-radius: 8px; /* Border radius sedikit lebih kecil */
+    padding: 8px;
+    margin: 8px 0; /* Mengurangi jarak antar elemen */
+    background-color: white !important;
+    color: black !important;
+}
+
+textarea {
+    height: 100px; /* Tinggi textarea yang lebih compact */
+}
+
+label {
+    font-size: 14px; /* Ukuran font label lebih kecil */
+    margin-bottom: 5px; /* Menambahkan jarak di bawah label */
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
+}
+#concon {
+    background-color: #123a23;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    height: 580px;
+    text-align: center;
+    position: relative;
+}
+
+#fcopy {
+    position: absolute;
+    text-align: left;
+    left: 50px;
+    bottom: 10px;
+}
+
+.social-media {
+    position: absolute;
+    bottom: 1px;
+    justify-content: center;
+    align-items: right;
+    right: 1000px;
+    translate: 900px;
+}
