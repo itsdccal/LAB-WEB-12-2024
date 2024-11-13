@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BLACKJACK</h1>
+
+        <div id="bet-area">
+            <h3>Select your bet:</h3>
+            <img src="cards/BET-100.png" class="bet-image" data-bet="100" alt="$100 Bet">
+            <img src="cards/BET-200.png" class="bet-image" data-bet="200" alt="$500 Bet">
+            <img src="cards/BET-500.png" class="bet-image" data-bet="500" alt="$500 Bet">
+            <p id="bet-display">Bet: $100</p>
+
+            <img src="cards/BET-100.png" class="reduce-bet-image" data-bet="100" alt="Reduce $100 Bet">
+            <img src="cards/BET-200.png" class="reduce-bet-image" data-bet="200" alt="Reduce $200 Bet">
+            <img src="cards/BET-500.png" class="reduce-bet-image" data-bet="500" alt="Reduce $500 Bet">
+        </div>
+
+        <div id="player-area">
+            <h2>Player</h2>
+            <div id="player-cards" class="card-area"></div>
+            <div id="player-score"></div>
+        </div>
+
+        <div id="dealer-area">
+            <h2>Dealer</h2>
+            <div id="dealer-cards" class="card-area"></div>
+            <div id="dealer-score"></div>
+        </div>
+
+        <div id="controls">
+            <button id="deal-button">Start</button>
+            <button id="hit-button" disabled>Hit</button>
+            <button id="stay-button" disabled>Stay</button>
+            <a href="home.html">
+                <button id="back-button">Back</button>
+                </a>
+        </div>
+
+        <div id="result"></div>
+
+        <div id="money-display">Money: $5000</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

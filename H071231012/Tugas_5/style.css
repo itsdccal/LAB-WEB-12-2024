@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('cards/BG_2.jpg');
+    background-size: cover;
+    background-position: center top;   
+    background-repeat: no-repeat;   
+    background-attachment: fixed; 
+    min-height: 100vh;                  
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    padding: 20px;
+}
+
+#bet-area {
+    margin-top: 25px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.card-area {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.card-area img {
+    width: 100px;
+    margin: 0 10px;
+}
+#controls {
+    border-color: #a2c3b0;
+}
+
+.container h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #9AE4AE; 
+    text-shadow: 
+        2px 2px 0px #6c9779,  
+        -2px -2px 0px #5c8167, 
+        -2px 2px 0px #6c9779,  
+        2px -2px 0px #5c8167;
+}
+
+.container h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff; 
+    text-shadow: 
+        2px 2px 0px #6c9779,  
+        -2px -2px 0px #6c9779, 
+        -2px 2px 0px #6c9779,  
+        2px -2px 0px #6c9779;
+}
+
+.bet-image{
+    width: 100px;
+    height: 100px;
+}
+
+.bet-image:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px #9AE4AE;
+    border-radius: 50%;
+}
+
+.reduce-bet-image{
+    width: 100px;
+    height: 100px;
+}
+
+.reduce-bet-image:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px #9AE4AE;
+    border-radius: 50%;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #9AE4AE;
+    color: #6c9779;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #6c9779;
+    color: #9AE4AE;
+}
+
+.container money-display{
+    margin-top: 100px;
+}
+
+.player-area{
+    margin-right: 100px;
+}
+
+.dealer-area{
+    margin-left: 100px;
+}
+
+#bet-display {
+    font-size: 20px;
+    color: #ffd700;
+    margin-top: 10px;
+}
+
+#money-display {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+#result {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #42f82d;
+}
+
+@keyframes throwFromRight {
+    0% {
+        transform: translateX(1000px) rotate(30deg); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0) rotate(0deg); 
+        opacity: 1; 
+    }
+}
+
+.new-card {
+    animation: throwFromRight 0.7s ease-out; 
+}
+
+img {
+    position: relative;
+}
+
+.halo {
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#money-display {
+    color: #ffd700;
+}
